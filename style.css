@@ -87,15 +87,30 @@ nav a:hover {
   padding: 0 1rem;
 }
 
+/* 
+  Treat the card as a link (anchor).
+  Make sure there's no underline, and color inherits from body.
+*/
 .card {
+  display: block;                /* Allows the entire card area to be clickable */
   background-color: #1e1e1e;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   width: 300px;
   padding: 1rem;
   text-align: center;
+  text-decoration: none;
+  color: inherit;                /* Use the current text color (body's #e8e8e8) */
+  transition: background-color 0.3s ease;
 }
 
+/* Hover effect for the entire card */
+.card:hover {
+  background-color: #333333;     /* Slightly darker background to show it's clickable */
+  cursor: pointer;
+}
+
+/* Card headings and text */
 .card h3 {
   color: #6feaf9;
   margin-bottom: 0.5rem;
