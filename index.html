@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css">
 <head>
   <meta charset="UTF-8">
   <title>Gorilla Tag Modding</title>
   <link rel="icon" type="image/x-icon" href="logo.png">
+
   <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,22 +29,30 @@
 
   <!-- CARD SECTION -->
   <section class="card-section" id="mods">
-    <div class="card">
+    <!-- 
+      Each card is now an <a> (anchor) element, making the entire card clickable. 
+      You can replace "#" with a real link for Normal, Modded, and Create metadata. 
+    -->
+    <a href="#" class="card">
       <h3>Normal Metadata's</h3>
       <p>The same metadata's used in Gorilla Tag.</p>
-    </div>
-    <div class="card">
+    </a>
+
+    <a href="#" class="card">
       <h3>Modded Metadata's</h3>
-      <p>Custom metadata's with custom features the normal one doesn't have.</p>
-    </div>
-    <div class="card">
+      <p>Custom metadata's with features the normal ones don't have.</p>
+    </a>
+
+    <a href="#" class="card">
       <h3>Create Metadata's</h3>
       <p>A custom program to easily create your own custom metadata's.</p>
-    </div>
-    <div class="card">
+    </a>
+
+    <!-- This card opens in a new tab with target="_blank" -->
+    <a href="https://discord.gg/RtBKaGNxTs" class="card" target="_blank">
       <h3>Join Our Discord</h3>
       <p>Get help when creating metadata and collaborate with others.</p>
-    </div>
+    </a>
   </section>
 
   <!-- FOOTER SECTION -->
